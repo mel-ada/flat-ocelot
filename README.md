@@ -5,7 +5,7 @@
 Complete a to do list app.
 ## Context
 
-Create a full stack to do list web app and make tutorials about what your learn.
+Create a full stack to do list web app.
 Goals
 - Learn how front end and back end connect.
 - Learn how to dissect a new problem/challenge.
@@ -26,6 +26,7 @@ The App: As a user...
 #### Stretch Goals/Nice to Have's:
 - [ ] I can create mulitple lists of to do's.
 - [ ] I can rearrange to do list items. 
+- [ ] make tutorials about what your learn.
 ---
 ## License
 
