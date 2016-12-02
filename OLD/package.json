@@ -1,0 +1,24 @@
+{
+  "name": "flat-ocelot",
+  "version": "1.0.0",
+  "description": "Complete a to do list app. ## Context",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuildCrafts/flat-ocelot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuildCrafts/flat-ocelot/issues"
+  },
+  "homepage": "https://github.com/GuildCrafts/flat-ocelot#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
+  }
+}
