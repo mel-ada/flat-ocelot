@@ -4,7 +4,7 @@ body{
     color: #989898;
 }
 
-#todo-table{
+.todo-table-formatting{
     position: relative;
     width: 95%;
     background: #090d13;

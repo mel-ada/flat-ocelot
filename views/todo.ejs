@@ -10,7 +10,7 @@
   </head>
   <body>
     <h1>My Todo List</h1>
-    <div id="todo-table">
+    <div class="todo-table-formatting" id="todo-table">
       <form>
         <input type="text" name="item" placeholder="Add new item..." required />
         <button type="submit">Add Item</button>
@@ -18,7 +18,7 @@
         <button id="1" type="delete">delete Item</button>
        </form>
 
-       <ul id="">
+       <ul>
          <% for (var i=0; i < todos.length; i++){ %>
            <input type="checkbox" value="1" /><span class=""><%= todos[i].item
              %></span><br>

@@ -12,7 +12,7 @@ module.exports = function(app){
   app.post('/todo', urlencodedParser, function(req, res){
     data.push(req.body);
     res.json(data);
-});
+  });
 
 
   app.delete('/todo/:item', function(req, res){
