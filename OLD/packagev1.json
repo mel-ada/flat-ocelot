@@ -2,15 +2,7 @@
   "name": "flat-ocelot",
   "version": "1.0.0",
   "description": "Complete a to do list app. ## Context",
-  "main": "app.js",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "ejs": "^2.5.3",
-    "express": "^4.14.0",
-    "localstorage": "^0.1.0",
-    "nodemon": "^1.11.0"
-  },
-  "devDependencies": {},
+  "main": "script.js",
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/GuildCrafts/flat-ocelot/issues"
   },
-  "homepage": "https://github.com/GuildCrafts/flat-ocelot#readme"
+  "homepage": "https://github.com/GuildCrafts/flat-ocelot#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
+  }
 }

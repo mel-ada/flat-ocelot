@@ -50,7 +50,7 @@ ul{
 
 li{
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     font-family: arial;
     font-size: 20px;
@@ -58,7 +58,7 @@ li{
     letter-spacing: 1px;
 }
 
-li:hover{
+.strikeable:hover{
     text-decoration: line-through;
     background: rgba(0,0,0,0.2);
 }
@@ -67,4 +67,18 @@ h1{
     background: url(/assets/rainbow.jpg) no-repeat center;
     margin-bottom: 0;
     text-indent: -10000px;
+}
+
+.edit-item{
+  display:block;
+}
+
+.todo-list{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: arial;
+  font-size: 20px;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
