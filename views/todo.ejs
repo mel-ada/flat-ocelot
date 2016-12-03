@@ -10,21 +10,45 @@
   </head>
   <body>
     <h1>My Todo List</h1>
-    <div class="todo-table-formatting" id="todo-table">
+    <div id="todo-table">
       <form>
         <input type="text" name="item" placeholder="Add new item..." required />
-        <button type="submit">Add Item</button>
-
-        <button id="1" type="delete">delete Item</button>
+        <button type="submit">Add Item</button><br>
        </form>
-
-       <ul>
-         <% for (var i=0; i < todos.length; i++){ %>
-           <input type="checkbox" value="1" /><span class=""><%= todos[i].item
-             %></span><br>
-         <% } %>
-       </ul>
-
+       <form>
+         <input type="text" name="item" placeholder="Edit item..." required />
+         <button type="submit">Update Item</button><br>
+        </form>
+       <div class="todo-list">
+         <ul>
+           <% for (var i=0; i < todos.length; i++){ %>
+             <input type="checkbox" value="1" />
+             <!--Use i to create id, pass item[i] in -->
+             <span id=i onClick="editItem(item[i])" class="strikeable to-do-item">
+               <li><%= todos[i].item %></li>
+             </span>
+             <span><a href=<%= "#edit/"+ i %> >edit</a></span><br>
+           <% } %>
+           </ul>
+       </div>
      </div>
+
+     <script>
+      // When I click on to-do-item span,
+      //function editItem(var task){
+
+
+    //  }
+        // Hide the span
+        // Add an input box, filled with the current text
+        // Add a button to submit
+        //const input = $( '<input />' )
+        //$( '.to-do-item' ).append( input )
+        // When I click on button
+          // Replace the span contents with input contents
+          // Send request to server to update item
+          // Remove input and button
+          // Show span
+     </script>
   </body>
 </html>
