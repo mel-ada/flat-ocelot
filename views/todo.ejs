@@ -11,23 +11,26 @@
   <body>
     <h1>My Todo List</h1>
     <div id="todo-table">
-      <form>
-        <input type="text" name="item" placeholder="Add new item..." required />
+      <form id="add-item-form">
+        <input id="add-item-textbox" type="text" name="item" placeholder="Add new item..." required />
         <button type="submit">Add Item</button><br>
        </form>
-       <form>
-         <input type="text" name="item" placeholder="Edit item..." required />
+       <form id="edit-item-form" style="display:none">
+         <input id="edit-item-textbox" type="text" name="item" placeholder="Edit item..." required />
          <button type="submit">Update Item</button><br>
+         <button id="cancel-edit-button" type="submit">Cancel</button><br>
         </form>
        <div class="todo-list">
          <ul>
            <% for (var i=0; i < todos.length; i++){ %>
+            <div class='todo-item'>
              <input type="checkbox" value="1" />
              <!--Use i to create id, pass item[i] in -->
-             <span id=i onClick="editItem(item[i])" class="strikeable to-do-item">
+               <span id=i onClick="editItem(item[i])" class="strikeable to-do-item">
                <li><%= todos[i].item %></li>
-             </span>
-             <span><a href=<%= "#edit/"+ i %> >edit</a></span><br>
+               </span>
+               <span><a class="edit-link" href=<%= "#edit/"+ i %> >edit</a></span><br>
+            </div>
            <% } %>
            </ul>
        </div>

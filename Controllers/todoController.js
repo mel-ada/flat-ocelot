@@ -14,11 +14,12 @@ module.exports = function (app) {
     res.json(data);
   });
 
-  app.post('/todo/:item', function (request, response) {
-    data = data.filter(function (todo) {
-      console.log(todo);
-      return todo.item.replace(/ /g, '-') !== req.params.item;
-    });
+  app.put('/todo/:index', urlencodedParser, function (req, res) {
+    var updatedTodo = req.body
+    console.log("updatedTodo::", updatedTodo)
+    var index = parseInt(req.params.index);
+
+    data[index] = updatedTodo
 
     res.json(data);
   });
