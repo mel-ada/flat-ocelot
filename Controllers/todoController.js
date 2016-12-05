@@ -16,7 +16,6 @@ module.exports = function (app) {
 
   app.put('/todo/:index', urlencodedParser, function (req, res) {
     var updatedTodo = req.body
-    console.log("updatedTodo::", updatedTodo)
     var index = parseInt(req.params.index);
 
     data[index] = updatedTodo
@@ -32,11 +31,5 @@ module.exports = function (app) {
 
     res.json(data);
   });
-
-  /*app.update('/todo/:item', function(req, res) {
-
-    //var itemPos = ...
-    //var data[itemPos] =
-  })*/
 
 };
