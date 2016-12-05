@@ -25,33 +25,14 @@
            <% for (var i=0; i < todos.length; i++){ %>
             <div class='todo-item'>
              <input type="checkbox" value="1" />
-             <!--Use i to create id, pass item[i] in -->
-               <span id=i onClick="editItem(item[i])" class="strikeable to-do-item">
-               <li><%= todos[i].item %></li>
-               </span>
-               <span><a class="edit-link" href=<%= "#edit/"+ i %> >edit</a></span><br>
+              <div class='todo-text'>
+               <li class='strikeable'><%= todos[i].item %></li>
+             </div>
+               <span><a class="edit-link" href=<%= "#edit/"+ i %> >edit</a></span>
             </div>
            <% } %>
            </ul>
        </div>
      </div>
-
-     <script>
-      // When I click on to-do-item span,
-      //function editItem(var task){
-
-
-    //  }
-        // Hide the span
-        // Add an input box, filled with the current text
-        // Add a button to submit
-        //const input = $( '<input />' )
-        //$( '.to-do-item' ).append( input )
-        // When I click on button
-          // Replace the span contents with input contents
-          // Send request to server to update item
-          // Remove input and button
-          // Show span
-     </script>
   </body>
 </html>

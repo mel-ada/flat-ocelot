@@ -71,13 +71,4 @@ $(document).ready(function () {
 // and show the `edit item` form. We also want to populate the textbox
 // with the value of the todo
 
-
-
-// function1 listening on `edit` click -  unhides the edit item form,
-// and hides the add item form
-
-//function 2 which is exactly like function on line 22, which will
-// use UPDATE as the type, and it will extract the itemPos using splice(),
-// and also send across the `new item` to update
-
 });
